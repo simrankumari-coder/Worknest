@@ -1,0 +1,94 @@
+{
+    "workspaces": [
+        {
+            "id": 1,
+            "name": "Work Downtown",
+            "location": "Bengaluru",
+            "type": "Private Desk",
+            "price": 500,
+            "availability": "Available",
+            "image": "/images/workspace1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Urban Desk Hub",
+            "location": "Mumbai",
+            "type": "Meeting Room",
+            "price": 700,
+            "availability": "Almost Full",
+            "image": "/images/workspace2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "CoSpace Central",
+            "location": "Delhi",
+            "type": "Open Desk",
+            "price": 400,
+            "availability": "Available",
+            "image": "/images/workspace3.jpg"
+        },
+        {
+            "id": 4,
+            "name": "The Work Loft",
+            "location": "Pune",
+            "type": "Private Office",
+            "price": 900,
+            "availability": "Available",
+            "image": "/images/workspace4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Focus Hub",
+            "location": "Hyderabad",
+            "type": "Private Desk",
+            "price": 550,
+            "availability": "Available",
+            "image": "/images/workspace5.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Desk District",
+            "location": "Chandigarh",
+            "type": "Open Desk",
+            "price": 350,
+            "availability": "Almost Full",
+            "image": "/images/workspace6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "WorkPoint",
+            "location": "Jaipur",
+            "type": "Meeting Room",
+            "price": 650,
+            "availability": "Available",
+            "image": "/images/workspace7.jpg"
+        },
+        {
+            "id": 8,
+            "name": "Creative Corner",
+            "location": "Kolkata",
+            "type": "Private Office",
+            "price": 850,
+            "availability": "Full",
+            "image": "/images/workspace8.jpg"
+        },
+        {
+            "id": 9,
+            "name": "WorkSphere",
+            "location": "Ahmedabad",
+            "type": "Private Desk",
+            "price": 600,
+            "availability": "Available",
+            "image": "/images/workspace9.jpg"
+        },
+        {
+            "id": 10,
+            "name": "The CoWork Room",
+            "location": "Chennai",
+            "type": "Open Desk",
+            "price": 450,
+            "availability": "Available",
+            "image": "/images/workspace10.jpg"
+        }
+    ]
+}

@@ -13,7 +13,7 @@ const Navbar = () => {
             </div>
             <div className='lg:flex hidden gap-8 text-xl  font-medium '>
                 <NavLink to="/" className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Home </NavLink>
-                <NavLink to='/workspace' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-600"}>Workspaces</NavLink>
+                <NavLink to='/workspaces' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-600"}>Workspaces</NavLink>
                 <NavLink to='about' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>About</NavLink>
                 <NavLink to='contact' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Contact</NavLink>
             </div>
@@ -27,13 +27,13 @@ const Navbar = () => {
 
                 <div className='bg-gray-200 text-[var(--heading)] p-5 absolute w-full top-full z-50  left-0 flex flex-col gap-4'>
 
-                    <div className='lg:hidden flex flex-col gap-8 text-xl  font-medium '>
+                    <div className='lg:hidden flex flex-col  text-xl  font-medium '>
                         <NavLink to="/" className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Home </NavLink>
-                        <NavLink to='/workspace' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-600"}>Workspaces</NavLink>
+                        <NavLink to='/workspaces' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-600"}>Workspaces</NavLink>
                         <NavLink to='about' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>About</NavLink>
                         <NavLink to='contact' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Contact</NavLink>
                     </div>
-                    <div className='lg:hidden flex flex-col gap-8 text-xl font-medium '>
+                    <div className='lg:hidden flex flex-col  text-xl font-medium '>
                         <NavLink to='login' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Login</NavLink>
                         <NavLink to='signup' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Sign Up</NavLink>
                     </div>
