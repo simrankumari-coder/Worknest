@@ -20,8 +20,8 @@ const Footer = () => {
                     <h2 className='text-gray-100 text-lg font-semibold uppercase tracking-wide mb-4'>Quick Links</h2>
                     <ul className='flex flex-col gap-2'>
                         <Link to="/"> <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Home</li></Link>
-                        <Link to="/communities">   <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Workspaces</li></Link>
-                        <Link to="events">    <li className='text-gray-200 hover:text-blue-400 transition text-sm'>About</li></Link>
+                        <Link to="/workspaces">   <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Workspaces</li></Link>
+                        <Link to="/about">    <li className='text-gray-200 hover:text-blue-400 transition text-sm'>About</li></Link>
 
                     </ul>
                 </div>
@@ -31,8 +31,8 @@ const Footer = () => {
                     </ul>
                     <Link to="/">
                         <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Browse Workspaces</li></Link>
-                    <Link to="/communities">   <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Featured Workspaces</li></Link>
-                    <Link to="events">    <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Workspaces Types</li></Link>
+                    <Link to="/workspaces">   <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Featured Workspaces</li></Link>
+                    <Link to="/workspaces">    <li className='text-gray-200 hover:text-blue-400 transition text-sm'>Workspaces Types</li></Link>
 
                 </div>
                 <div className='text-white'>

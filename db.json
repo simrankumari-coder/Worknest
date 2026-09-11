@@ -1,94 +1,411 @@
 {
-    "workspaces": [
-        {
-            "id": 1,
-            "name": "Work Downtown",
-            "location": "Bengaluru",
-            "type": "Private Desk",
-            "price": 500,
-            "availability": "Available",
-            "image": "/images/workspace1.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Urban Desk Hub",
-            "location": "Mumbai",
-            "type": "Meeting Room",
-            "price": 700,
-            "availability": "Almost Full",
-            "image": "/images/workspace2.jpg"
-        },
-        {
-            "id": 3,
-            "name": "CoSpace Central",
-            "location": "Delhi",
-            "type": "Open Desk",
-            "price": 400,
-            "availability": "Available",
-            "image": "/images/workspace3.jpg"
-        },
-        {
-            "id": 4,
-            "name": "The Work Loft",
-            "location": "Pune",
-            "type": "Private Office",
-            "price": 900,
-            "availability": "Available",
-            "image": "/images/workspace4.jpg"
-        },
-        {
-            "id": 5,
-            "name": "Focus Hub",
-            "location": "Hyderabad",
-            "type": "Private Desk",
-            "price": 550,
-            "availability": "Available",
-            "image": "/images/workspace5.jpg"
-        },
-        {
-            "id": 6,
-            "name": "Desk District",
-            "location": "Chandigarh",
-            "type": "Open Desk",
-            "price": 350,
-            "availability": "Almost Full",
-            "image": "/images/workspace6.jpg"
-        },
-        {
-            "id": 7,
-            "name": "WorkPoint",
-            "location": "Jaipur",
-            "type": "Meeting Room",
-            "price": 650,
-            "availability": "Available",
-            "image": "/images/workspace7.jpg"
-        },
-        {
-            "id": 8,
-            "name": "Creative Corner",
-            "location": "Kolkata",
-            "type": "Private Office",
-            "price": 850,
-            "availability": "Full",
-            "image": "/images/workspace8.jpg"
-        },
-        {
-            "id": 9,
-            "name": "WorkSphere",
-            "location": "Ahmedabad",
-            "type": "Private Desk",
-            "price": 600,
-            "availability": "Available",
-            "image": "/images/workspace9.jpg"
-        },
-        {
-            "id": 10,
-            "name": "The CoWork Room",
-            "location": "Chennai",
-            "type": "Open Desk",
-            "price": 450,
-            "availability": "Available",
-            "image": "/images/workspace10.jpg"
-        }
-    ]
+  "workspaces": [
+    {
+      "id": "1",
+      "name": "Urban Hub",
+      "location": "Delhi",
+      "type": "Coworking",
+      "price": 500,
+      "availability": "Available",
+      "image": "/images/workspace1.jpg",
+      "description": "A modern coworking space with comfortable seating, reliable Wi-Fi, and quiet areas for focused work. It is a great choice for freelancers, students, and small teams looking for a productive environment.",
+      "capacity": 25,
+      "opening": "9 AM - 8 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "The Work Loft",
+      "location": "Mumbai",
+      "type": "Private Office",
+      "price": 700,
+      "availability": "Almost Full",
+      "image": "/images/workspace2.jpg",
+      "description": "A comfortable private workspace with a professional atmosphere, dedicated desks, and quiet areas for focused work. It is ideal for individuals and small teams who need a peaceful place to work.",
+      "capacity": 12,
+      "opening": "8 AM - 9 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Desk & Co",
+      "location": "Bangalore",
+      "type": "Coworking",
+      "price": 400,
+      "availability": "Available",
+      "image": "/images/workspace3.jpg",
+      "description": "A creative shared workspace with flexible seating, reliable internet, and comfortable working areas. It is a great option for freelancers, students, and small teams who enjoy a collaborative environment.",
+      "capacity": 30,
+      "opening": "9 AM - 7 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "The Creative Room",
+      "location": "Pune",
+      "type": "Creative Studio",
+      "price": 600,
+      "availability": "Available",
+      "image": "/images/workspace4.jpg",
+      "description": "A bright and flexible studio designed for creative projects, brainstorming sessions, and team activities. The space provides a comfortable environment where creative teams can work and collaborate.",
+      "capacity": 18,
+      "opening": "10 AM - 8 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Focus Point",
+      "location": "Hyderabad",
+      "type": "Private Office",
+      "price": 800,
+      "availability": "Almost Full",
+      "image": "/images/workspace5.jpg",
+      "description": "A quiet professional workspace designed for productivity, concentration, and private meetings. It is suitable for professionals and small teams who prefer a calm and focused working environment.",
+      "capacity": 10,
+      "opening": "8 AM - 8 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "WorkNest",
+      "location": "Chennai",
+      "type": "Coworking",
+      "price": 450,
+      "availability": "Available",
+      "image": "/images/workspace6.jpg",
+      "description": "A friendly shared workspace with comfortable desks, collaborative areas, and a relaxed atmosphere. It is suitable for freelancers, remote workers, students, and growing teams.",
+      "capacity": 35,
+      "opening": "9 AM - 9 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "7",
+      "name": "The Studio Desk",
+      "location": "Kolkata",
+      "type": "Creative Studio",
+      "price": 550,
+      "availability": "Available",
+      "image": "/images/workspace7.jpg",
+      "description": "A stylish studio space created for designers, creators, and small teams who need room to develop their ideas. It offers a comfortable setting for both individual and collaborative work.",
+      "capacity": 20,
+      "opening": "10 AM - 7 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "8",
+      "name": "Metro Workspace",
+      "location": "Gurgaon",
+      "type": "Coworking",
+      "price": 650,
+      "availability": "Almost Full",
+      "image": "/images/workspace8.jpg",
+      "description": "A modern coworking space with flexible seating, comfortable work areas, and a convenient city location. It is a practical choice for professionals and teams looking for a productive workspace.",
+      "capacity": 28,
+      "opening": "8 AM - 9 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "9",
+      "name": "Quiet Corner",
+      "location": "Jaipur",
+      "type": "Private Office",
+      "price": 350,
+      "availability": "Available",
+      "image": "/images/workspace9.jpg",
+      "description": "A peaceful private workspace for people who prefer a calm environment with minimal distractions. It is ideal for focused individual work, online meetings, and quiet study sessions.",
+      "capacity": 8,
+      "opening": "9 AM - 6 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "The Collective",
+      "location": "Ahmedabad",
+      "type": "Coworking",
+      "price": 750,
+      "availability": "Full",
+      "image": "/images/workspace10.jpg",
+      "description": "A spacious coworking environment designed for teams, freelancers, and growing businesses. It provides plenty of room for collaboration, meetings, and focused work throughout the day.",
+      "capacity": 40,
+      "opening": "8 AM - 10 PM",
+      "amenities": [
+        "Wi-Fi",
+        "Meeting Room",
+        "Parking",
+        "Coffee"
+      ]
+    }
+  ],
+  "messages": [
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "i am very good",
+      "id": "v9sjSEDmwrM"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "i am very good",
+      "id": "7Y6rNAJ4FTk"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "i am very good",
+      "id": "Lwu_JVjeI3o"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hey i am simran",
+      "message": "i am learing react",
+      "id": "twXn8V8jENU"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hey i am simran",
+      "message": "i reihkjrgodrigpiijhkopfiouhggjopuogy90uihjjdiopf",
+      "id": "m4-Rgy9vYxU"
+    },
+    {
+      "name": "preeti",
+      "email": "preetik445@gmail.com",
+      "subject": "i am preeti",
+      "message": "hey how are you ",
+      "id": "ap14VzEW5YA"
+    },
+    {
+      "name": "simrans",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "iyyughjkfhgjokjbcjklsjhfpsihkjndms,vsjdknmuigjknm xviknm sdijmv sivjkn sdjsdnm vsdijknv sdjk",
+      "id": "nUcZe2bUbA0"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hey i am simran",
+      "message": "ertyurhukiot9ujfildseopr0ruhdiop[-eirsrdhuipo[a0pihugio[waiguip0owr",
+      "id": "tqX62OqCggM"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "dsdfdlougihjmna,.f;fiuogibjho8igjhbs,m.d;floiuysdbnmfl;p[-090s87tdghvfnm,;ld9u8fythsnmkl;pof987tgdhbnfl;'p098d7tyffbklkpd[o",
+      "message": "ererereejkhl;pd[oetkjhgkop[foeijgkffop[fdsoigfk",
+      "id": "Ah9gGBom7Qw"
+    },
+    {
+      "name": "simransimrna",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hey i am simran",
+      "message": "ortiyjgkhfdpsoaiejrktnhmgfdspeoitjhn,kdlfpopgijtnjrdl;pgojdrbjoh[gokn",
+      "id": "cC3L_vGMv0A"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i am preeti",
+      "message": "ytresfdcgvhbjkoi98765trdfcgvhjkop09876trdfghjklpo[-0987tyfdc",
+      "id": "pSGr3H9mva0"
+    },
+    {
+      "name": "",
+      "email": "",
+      "subject": "",
+      "message": "",
+      "id": "XD5FoUqXwhs"
+    },
+    {
+      "name": "hello",
+      "email": "hello@gmail.com",
+      "subject": "heeloo its mehelo ",
+      "message": "heloo its me hi how are you",
+      "id": "sJfTnyEdk4s"
+    },
+    {
+      "name": "sd",
+      "email": "sdsd@gmail.com",
+      "subject": "dsdsdsdsde",
+      "message": "fgfgfgfgfgfgfgfgfgfgfgfgfgfg",
+      "id": "uJw5Ztn_nvA"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hello hey boy",
+      "message": "hello hey boy hey bpy how are you ",
+      "id": "XF7y2VzGXHs"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i am preeti",
+      "message": "hrjtkgnmd,,f.lk;goihb iojknmfdijkf",
+      "id": "5PLZ1PRbOEA"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "hello hello hello hello hello hello how are you doing",
+      "id": "Kdr-UKtX4cE"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "hello hello hello hello hello hello how are you doing",
+      "id": "tOl0TCNZ4gs"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "hey i am simran",
+      "message": "seema seema seemaw seema seema seema seema seema seema seema seemas seema seema seema seema seema seema ",
+      "id": "_60W7ll-0rA"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "EPbDhtBLggo"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "pyfKZwdjC-s"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "o_SewINnvWQ"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "ML-kT0ftVwQ"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "3npyc4rv3r0"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "EdAiMMtNdBw"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "D_KwVrXVmys"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i wnT TO olce this error",
+      "message": "i want to sove this error  i  solve this by using the  warning in ht e server ",
+      "id": "lMFbTq4oKdE"
+    },
+    {
+      "name": "preeti",
+      "email": "preeti@gmail.com",
+      "subject": "dsdfdlougihjmna,.f;fiuogibjho8igjhbs,m.d;floiuysdbnmfl;p[-090s87tdghvfnm,;ld9u8fythsnmkl;pof987tgdhbnfl;'p098d7tyffbklkpd[o",
+      "message": "difhkjbmfnklihbfkl;'dshkgbnm.sd;'p[[gihbsdnm.l;pgoipukhdb ",
+      "id": "gvUbSid_Mv0"
+    },
+    {
+      "name": "",
+      "email": "",
+      "subject": "",
+      "message": "",
+      "id": "Inj-PNyCnZM"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i want to book",
+      "message": "i wnat to book i want a book",
+      "id": "uNeK_ju-qYg"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i did not like it",
+      "message": "ti si not good i did not like it",
+      "id": "UTR91oSsGW0"
+    },
+    {
+      "name": "Simran Kumari",
+      "email": "simrankumari.it1011@gmail.com",
+      "subject": "i did not like it",
+      "message": "ti si not good i did not like it",
+      "id": "JRDxKiDkPbk"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -1,10 +1,12 @@
 import React from 'react'
 import { FaBuilding } from "react-icons/fa";
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom'
+import { FaUserAlt } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-const Navbar = () => {
+const Navbar = ({ isLogged, username }) => {
     const [setMenu, setSetMenu] = useState(false)
     return (
         <nav className=' flex justify-between items-center lg:px-6 lg:py-4 px-4 py-2 border border-t relative z-50'>
@@ -18,12 +20,25 @@ const Navbar = () => {
                 <NavLink to='contact' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Contact</NavLink>
             </div>
             <div className='lg:flex hidden  gap-8 text-xl font-medium '>
-                <NavLink to='login' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Login</NavLink>
+                {isLogged === true ?
+
+                    <div className='flex gap-2  text-xl justify-center items-center text-gray-500'>
+                        <Link to="/profile">
+                            <FaUserAlt />
+                        </Link>
+                        <span className='' >Hi, {username}</span>
+
+                    </div>
+                    :
+
+                    <NavLink to='login' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Login</NavLink>
+                }
                 <NavLink to='signup' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Sign Up</NavLink>
             </div>
             <button className='lg:hidden' onClick={() => setSetMenu(!setMenu)}> {setMenu === true ? <FaTimes /> : <GiHamburgerMenu />} </button>
 
-            {setMenu === true &&
+            {
+                setMenu === true &&
 
                 <div className='bg-gray-200 text-[var(--heading)] p-5 absolute w-full top-full z-50  left-0 flex flex-col gap-4'>
 
@@ -34,13 +49,25 @@ const Navbar = () => {
                         <NavLink to='contact' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Contact</NavLink>
                     </div>
                     <div className='lg:hidden flex flex-col  text-xl font-medium '>
-                        <NavLink to='login' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Login</NavLink>
+                        {isLogged === true ?
+
+                            <div className='flex gap-2  text-xl justify-start  lg:justify-center items-center text-gray-500'>
+                                <Link to="/profile">
+                                    <FaUserAlt />
+                                </Link>
+                                <span className='' >Hi, {username}</span>
+
+                            </div>
+                            :
+
+                            <NavLink to='login' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Login</NavLink>
+                        }
                         <NavLink to='signup' className={({ isActive }) => isActive ? "text-teal-700 font-bold" : "text-gray-500"}>Sign Up</NavLink>
                     </div>
 
                 </div>
             }
-        </nav>
+        </nav >
     )
 }
 

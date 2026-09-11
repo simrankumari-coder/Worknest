@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom';
 const Works = () => {
     return (
         <div className='rounded-md grid grid-cols-1 gap-4 lg:grid-cols-2 mt-10 px-6 py-6 bg-white'>
@@ -53,7 +53,9 @@ const Works = () => {
                         <p className='px-5 text-teal-500 text-sm md:text-[15px]  font-medium'>Conirm your booking and your're ready to work</p>
                     </div>
                 </div>
-                <button className='px-3 mt-3 w-full text-xl py-3 bg-teal-700 text-white rounded-md'>Find Workspace</button>
+                <Link to="/workspaces">
+                    <button className='px-3 mt-3 w-full text-xl py-3 bg-teal-700 text-white rounded-md'>Find Workspace</button>
+                </Link>
 
             </div>
         </div>

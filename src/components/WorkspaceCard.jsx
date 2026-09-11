@@ -1,6 +1,7 @@
 import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 const WorkspaceCard = ({ image, name, availability, location, type, price, id }) => {
     return (
         <div className='rounded-md bg-[var(--background)] shadow-xl transition-all duration-300  hover:shadow-2xl hover:shadow-teal-700/40 hover:-translate-y-2 mx-6 md:mx-4  my-4  md:my-2 flex flex-col gap-2 '>
@@ -17,7 +18,9 @@ const WorkspaceCard = ({ image, name, availability, location, type, price, id })
                     <p className=''>{price}/day</p>
                     <p className='flex justify-center items-center'><GoDotFill className='text-green-700 mt-1' />{availability}</p>
                 </div>
-                <button className='px-3 mt-3 w-full text-xl py-3 bg-[var(--primary)]  text-white rounded-md'>View Details</button>
+                <Link to={`/workspaces/${id}`}>
+                    <button className='px-3 mt-3 w-full text-xl py-3 bg-[var(--primary)]  text-white rounded-md'>View Details</button>
+                </Link>
             </div>
         </div>
     )

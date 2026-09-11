@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Hero from '../components/Hero'
 import { BsLightningChargeFill } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
@@ -12,7 +13,7 @@ const Home = ({ workspaces }) => {
                 <div className='mt-10 flex flex-col gap-3 justify-center items-center'>
 
                     <h1 className='text-[var(--heading)] text-2xl md:text-5xl font-bold'>Why Choose WorkNest </h1>
-                    <p className='text-[var(--subHeading)] text-sm'>Everything you need to find and book the right workspace</p>
+                    <p className='text-[var(--subHeading)] text-sm p-2'>Everything you need to find and book the right workspace</p>
                 </div>
                 <div className='flex flex-col md:flex-row mt-10 p-2 gap-20 md:gap-5 '>
                     <div className='bg-white border shadow-lg  hover:shadow-xl/30 hover:shadow-gray-700  border-teal-600 hover:border-teal-700 hover:ring-1 hover:ring-teal-800  hover:-translate-y-2  transition-all duration-300 px-4 py-4 flex flex-col gap-2 justify-center items-center rounded-md'>
@@ -36,7 +37,9 @@ const Home = ({ workspaces }) => {
             <section className='w-full mx-auto lg:max-w-6xl max-w-full mt-6 flex flex-col text-center justify-center tracking-wide gap-3 items-center'>
                 <h1 className='font-bold text-2xl md:text-5xl  text-gray-700'>Ready to find your workspace?</h1>
                 <p className='text-[var(--subHeading)] p-2 text-sm'>Discover a workplace that fits the way you work</p>
-                <button className='px-6 py-3 text-white  bg-[var(--primary)] text-center font-bold text-xl rounded-md'>Explore Workspaces</button>
+                <Link to="/workspaces">
+                    <button className='px-6 py-3 text-white  bg-[var(--primary)] text-center font-bold text-xl rounded-md'>Explore Workspaces</button>
+                </Link>
             </section>
         </div>
     )

@@ -1,8 +1,27 @@
 import React from 'react'
 import WorkspaceCard from './WorkspaceCard'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const Hero = ({ workspaces }) => {
+    const navigate = useNavigate()
+    const [selectLocation, setSelectLocation] = useState("")
+    const [type, setType] = useState("")
+    const handleLocation = (e) => {
+        setSelectLocation(e.target.value)
+    }
 
+    const handleType = (e) => {
+        setType(e.target.value)
+    }
+    const handleSubmit = () => {
+        navigate("/workspaces", {
+            state: {
+                selectLocation,
+                type
+            }
+        })
+    }
 
     return (
         <div>
@@ -13,16 +32,16 @@ const Hero = ({ workspaces }) => {
                         <h1 className='text-white text-3xl md:text-4xl font-bold'>Find Your Perfect Workspace</h1>
                         <p className='text-white/90 text-sm text-justify'>Discover flexible workspace, check  real-time availability, and book your ideal space in just a few clicks</p>
                     </div>
-                    <div className='text-white/90   mt-10 flex flex-col md:flex-row justify-center items-center gap-2  '>
-                        <input placeholder="location" type="text" className='border  rounded-lg outline-none px-4 py-3' />
-                        <input placeholder="date" type="date" className='border rounded-lg  outline-none px-4 py-3' />
-                        <select className='border rounded-lg  px-4 py-3 outline-none'>
-                            <option disabled value="">Workspace Types</option>
-                            <option value="desk">Desk</option>
-                            <option value="meeting-room">Meeting Room</option>
-                            <option value="private-office">Private Office</option>
+                    <div className='text-white/90   mt-10 flex flex-col md:flex-row justify-center items-center gap-2 '>
+                        <input value={selectLocation} onChange={handleLocation} placeholder="location" type="text" className='border  rounded-lg outline-none px-4 py-3' />
+
+                        <select value={type} onChange={handleType} className='border  rounded-lg  px-4 py-3 outline-none'>
+                            <option className='text-gray-800' disabled value="">Workspace Types</option>
+                            <option className='text-gray-800' value="desk">Coworking</option>
+                            <option className='text-gray-800' value="meeting-room">Meeting Room</option>
+                            <option className='text-gray-800' value="private-office">Private Office</option>
                         </select>
-                        <button className='px-6 py-3  w-36 text-black bg-white rounded-md'>Search</button>
+                        <button onClick={handleSubmit} className='px-6 py-3  w-36 text-black bg-white rounded-md'>Search</button>
                     </div>
                 </div>
             </div>
@@ -35,8 +54,9 @@ const Hero = ({ workspaces }) => {
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-2 lg:gap-10 mt-5 '>
 
+
                     {workspaces.slice(0, 3).map(item => {
-                        return <WorkspaceCard key={item.id} name={item.name} location={item.location} type={item.type} price={item.price} availability={item.availability} image={item.image} />
+                        return < WorkspaceCard key={item.id} id={item.id} name={item.name} location={item.location} type={item.type} price={item.price} availability={item.availability} image={item.image} />
                     })}
                 </div>
             </section>
