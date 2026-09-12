@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Detail from "./components/Detail";
 import Login from "./pages/Login";
+import workspaces from "./data/workspace";
 import SignUp from "./pages/SignUp";
 import SpaceOwner from "./pages/SpaceOwner"
 import BookingPage from "./components/BookingPage";
@@ -65,13 +66,9 @@ function App() {
     navigate("/")
   }
 
-  const [workspaces, setWorkspaces] = useState([])
+  const [workspaces, setWorkspaces] = useState(workspaces)
 
-  useEffect(() => {
-    fetch("http://localhost:3000/workspaces")
-      .then((response) => response.json())
-      .then((data) => { setWorkspaces(data) })
-  }, [])
+
   return (
 
     <>

@@ -124,7 +124,7 @@ npm run preview
 
 ## 🌐 Live Demo
 
-Add your deployed Netlify link here after deployment:
+https://smart-worknest.netlify.app
 
 ## 🎯 Project Goal
 
