@@ -31,14 +31,9 @@ const Contact = () => {
             message: message
 
         }
-        const response = await
-            fetch("http://localhost:3000/messages", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(formData)
-            });
+        const oldMessages = JSON.parse(localStorage.getItem("messages")) || []
+        oldMessages.push(formData)
+        localStorage.setItem("messages", JSON.stringify(oldMessages))
         setName("")
         setEmail("")
         setSubject("")

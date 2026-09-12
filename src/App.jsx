@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Detail from "./components/Detail";
 import Login from "./pages/Login";
-import workspaces from "./data/workspace";
+import workspacesData from "./data/workspace";
 import SignUp from "./pages/SignUp";
 import SpaceOwner from "./pages/SpaceOwner"
 import BookingPage from "./components/BookingPage";
@@ -66,7 +66,7 @@ function App() {
     navigate("/")
   }
 
-  const [workspaces, setWorkspaces] = useState(workspaces)
+  const [workspaces, setWorkspaces] = useState(workspacesData)
 
 
   return (

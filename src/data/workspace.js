@@ -1,5 +1,5 @@
 
-const workspaces = [
+const workspacesData = [
     {
         id: "1",
         name: "Urban Hub",
@@ -181,4 +181,4 @@ const workspaces = [
         ]
     }
 ]
-export default workspaces
+export default workspacesData
